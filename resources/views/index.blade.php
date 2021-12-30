@@ -23,11 +23,11 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
+    <body id="Home">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Homepage</a>
+                <a class="navbar-brand" href="#Home">Homepage</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -35,7 +35,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#Profil">Profil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Portofolio">Portofolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Blog">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Gallery">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -49,7 +49,7 @@
                 @forelse ($hero as $item)
                     <div class="masthead-subheading">{{ $item->title }}</div>
                     <div class="masthead-heading text-uppercase">{{ $item->description }}</div>
-                    <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                    <a class="btn btn-primary btn-xl text-uppercase" href="#Profil">Tell Me More</a>
                 @empty
                     <p>Data Kosong</p>  
                 @endforelse
@@ -129,7 +129,7 @@
             </div>
         </section>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section bg-light" id="Portofolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portofolio</h2>
